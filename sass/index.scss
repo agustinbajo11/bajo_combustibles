@@ -1,0 +1,21 @@
+/* Variables */
+@import "./misc/variables";
+
+/* Normalizadores */
+@import "./misc/normalize";
+
+/* Mixins */
+@import "./misc/mixins";
+@import "./misc/maps"; /* (TIENE QUE ESTAR EN EL HTML) */
+
+/* Header */
+@import "./partials/header";
+
+/* Home page */
+@import "./views/home";
+
+/* Gallery */
+@import "./views/gallery";
+
+/* Footer */
+@import "./partials/footer";

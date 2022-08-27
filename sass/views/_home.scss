@@ -1,0 +1,301 @@
+.btn {
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.bg-adventure {
+  @extend .btn;
+}
+.bg-football {
+  @extend .btn;
+}
+.bg-action {
+  @extend .btn;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+  padding-bottom: 0% !important;
+}
+
+h4 {
+  margin-bottom: 0 !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0% !important;
+  padding-bottom: 0% !important;
+}
+
+.section-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: auto;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  width: 350px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  height: 560px;
+}
+
+.listContainer b {
+  left: 0;
+}
+
+.imageContainer {
+  background-color: rgb(235, 54, 54);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/bajo-combustibles-background.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.texto h2 {
+  font-size: 42px;
+  margin: 5px 0;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 240px;
+  background: darkslategray;
+  padding: 24px;
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer div {
+  display: flex;
+  width: 520px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  label.logo {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 16px;
+  }
+}
+
+/* -------------SERVICIOS------------ */
+
+.serviciosSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e8e8;
+  padding: 80px 48px 48px 48px;
+}
+
+.serviciosContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  padding-right: 2.5%;
+}
+
+.serviciosContainer ul {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media (max-width: 858px) {
+  .serviciosContainer ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .listContainer {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -------------Nosotros------------ */
+
+.sectionNosotros {
+  height: auto;
+  background-color: #e9e8e8;
+  padding: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.nosotrosContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.nosotrosInfo {
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .sectionNosotros {
+    height: auto;
+  }
+
+  .nosotrosInfo {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* -------------Contacto------------ */
+.contacto {
+  padding: 24px;
+}
+
+.contactoTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.contactoContainer iframe {
+  width: 70%;
+  height: 400px;
+}
+
+.contactoTel {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 575px) {
+  .contactoContainer iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.fcf-form-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background-color: #e9e8e8;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.fcf-form-control {
+  resize: none;
+  width: 300px;
+}
+
+/* ---bootstrap--- */
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.puff-in-center {
+  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+    both;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}

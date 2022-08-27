@@ -1,0 +1,11 @@
+$colors: (
+  adventure: $adventure,
+  football: $football,
+  action: $action,
+);
+
+@each $name, $value in $colors {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
