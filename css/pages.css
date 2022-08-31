@@ -419,7 +419,7 @@ footer {
   padding: 0px 32px 32px;
 }
 
-.premiosLogros {
+.premiosLogros ul li {
   list-style-type: disc;
 }
 
